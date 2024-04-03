@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Video Conferencing App</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div id="header">
+    <h1>Welcome to the Video Conferencing App</h1>
+  </div>
+
+  <div id="videos-container">
+    <div class="video-box">
+      <video id="local-video" autoplay muted></video>
+      <div class="status-indicator camera-on" id="camera-status"></div>
+      <div class="status-indicator mic-on" id="mic-status"></div>
+    </div>
+  </div>
+
+  <div id="controls">
+    <button class="control-button" id="toggle-camera-button">
+      <img src="icons/cam_on.png" alt="Camera Icon" id="camera-on-icon">
+      <img src="icons/cam_off.png" alt="Camera Off Icon" id="camera-off-icon" style="display: none;">
+    </button>    
+    <button class="control-button" id="toggle-mic-button">
+      <img src="icons/mic.png" alt="Mic Icon" id="mic-on-icon">
+      <img src="icons/mic_off.png" alt="Mic Off Icon" id="mic-off-icon" style="display: none;">
+    </button>    
+    <button class="control-button" id="leave-button">
+      <img src="icons/hang_up.png" alt="Close Icon">
+    </button>    
+  </div>
+</body>
+</html>
+

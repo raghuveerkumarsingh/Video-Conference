@@ -1,0 +1,79 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: black; /* Set the background color to black */
+  color: white; /* Set text color to white for better visibility */
+}
+
+#header {
+  padding: 20px;
+  text-align: center;
+}
+
+#header h1 {
+  margin: 0;
+}
+
+#videos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.video-box {
+  width: 400px; /* Increased width */
+  height: 300px; /* Increased height */
+  margin: 10px;
+  border: 1px solid #ccc;
+  background-color: black; /* Set the video box background color to black */
+}
+
+video {
+  width: 100%;
+  height: 100%;
+}
+
+#controls {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.control-button {
+  padding: 0; /* Remove padding to fit the image size */
+  margin: 0 10px;
+  cursor: pointer;
+  border: none;
+  background: none; /* Remove background */
+}
+
+.control-button img {
+  width: 69px; /* Set the width of the image */
+}
+
+.control-button:focus {
+  outline: none; /* Remove focus outline */
+}
+
+/* Style for indicating camera and mic status */
+.status-indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+#toggle-camera-button.camera-on,
+#toggle-mic-button.mic-on {
+  background-color: green; /* Set the button background color when on */
+}
+
+#leave-button {
+  background-color: #ff5f5f;
+  color: white;
+}
